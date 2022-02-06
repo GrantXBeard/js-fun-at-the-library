@@ -31,13 +31,12 @@ function listTitles(shelves) {
 
 function searchShelf(shelves, title) {
   for (var i = 0; i < shelves.length; i++) {
-    if (i === shelves.title) {
-    //   title === true;
-    // // } else {
-    // //   title !== false;
-      return [i]
+    if (title === shelves[i].title) {
+      return true
+
     }
   }
+  return false
 }
 
 
